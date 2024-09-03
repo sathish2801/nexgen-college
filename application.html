@@ -487,62 +487,51 @@
         <!-- Start Application Area -->
         <div class="application-details-area ptb-100">
             <div class="container">
-                <form class="application-form-details">
+                <form class="application-form-details" action="http://192.168.1.35:1000/forms/nexgen/cud/" method="POST">
                     <h3>Applicant Details</h3>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label class="form-label">First Name</label>
-                                <input type="text" class="form-control" placeholder="First name here">
+                                <input type="text" class="form-control" name="first_name" placeholder="First name here" required>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label class="form-label">Last Name</label>
-                                <input type="text" class="form-control" placeholder="Last name here">
+                                <input type="text" class="form-control" name="last_name" placeholder="Last name here" required>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label class="form-label">Email address</label>
-                                <input type="text" class="form-control" placeholder="Email address here">
+                                <input type="email" class="form-control" name="email" placeholder="Email address here" required>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label class="form-label">Phone number</label>
-                                <input type="text" class="form-control" placeholder="Phone number here">
+                                <input type="tel" class="form-control" name="phone_number" placeholder="Phone number here" required>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label class="form-label">State name</label>
-                                <input type="text" class="form-control" placeholder="State name here">
+                                <input type="text" class="form-control" name="state" placeholder="State name here" required>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label class="form-label">Zip code</label>
-                                <input type="text" class="form-control" placeholder="Zip code here">
+                                <input type="text" class="form-control" name="zipcode" placeholder="Zip code here" required>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label class="form-label">Date of birth</label>
-                                <input type="text" class="form-control" placeholder="Date of birth here">
+                                <input type="date" class="form-control" name="dob" required>
                             </div>
                         </div>
-                        <!-- <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-label">Student type</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Student type here</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div> -->
                     </div>
                     <div class="m-30"></div>
                     <h3>Education Details</h3>
@@ -550,28 +539,28 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label class="form-label">Select area of study</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Please select subject</option>
-                                    <option value="1">BBA</option>
-                                    <option value="2">BCA</option>
-                                    <option value="3">MCA</option>
-                                    <option value="3">MBA</option>
+                                <select class="form-select" name="course" required>
+                                    <option value="">Please select subject</option>
+                                    <option value="BBA">BBA</option>
+                                    <option value="MBA">MBA</option>
+                                    <option value="BCA">BCA</option>
+                                    <option value="MCA">MCA</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label class="form-label">Degree level</label>
-                                <input type="text" class="form-control" placeholder="Bachelor’s Degree">
+                                <input type="text" class="form-control" name="degree" placeholder="Bachelor’s Degree" required>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="form-label">Additional information</label>
-                        <textarea class="form-control textarea" placeholder="Questions? Anything you’d like to know or ask..."></textarea>
+                        <textarea class="form-control" name="description" placeholder="Questions? Anything you’d like to know or ask..."></textarea>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <input class="form-check-input" type="checkbox" id="flexCheckDefault" required>
                         <label class="form-check-label" for="flexCheckDefault">
                             By submitting this form, you agree to the Adma University <a class="text-decoration-none" href="#">privacy</a> notice.
                         </label>
@@ -583,7 +572,9 @@
                 </form>
             </div>
         </div>
-        <!-- End Application Area -->
+        
+        
+           <!-- End Application Area -->
 
         <!-- Start Footer Area -->
         <div class="footer-area pt-100 pb-75">
@@ -727,42 +718,42 @@
         <!-- End Footer Area -->
 
        <!-- Start Copyright Area -->
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row align-items-center" data-cues="slideInUp">
-                    <div class="col-lg-2 col-sm-12">
-                        <div class="copyright-logo">
-                            <a class="text-decoration-none" href="index.html">
-                                <img src="assets/img/black-logo.png" alt="black-logo">
-                            </a>
-                        </div>
+       <div class="copyright-area">
+        <div class="container">
+            <div class="row align-items-center" data-cues="slideInUp">
+                <div class="col-lg-2 col-sm-12">
+                    <div class="copyright-logo">
+                        <a class="text-decoration-none" href="index-3.html">
+                            <img src="assets/img/black-logo.png" alt="Nexgen Black Logo">
+                        </a>
                     </div>
-                    <div class="col-lg-5 col-sm-6">
-                        <div class="copyright-title text-end">
-                            <p>© <strong>Nexgen</strong> is Proudly Owned by Roriri</p>
-                        </div>
-                    </div>
-                    <!-- <div class="col-lg-5 col-sm-6">
-                        <div class="copyright-list text-end">
-                            <ul class="list-unstyled ps-0 mb-0">
-                                <li class="d-inline-block">
-                                    <a class="text-decoration-none" href="university-life.html">Students</a>
-                                </li>
-                                <li class="d-inline-block">
-                                    <a class="text-decoration-none" href="faculty.html">Faculty</a>
-                                </li>
-                                <li class="d-inline-block">
-                                    <a class="text-decoration-none" href="university-overview.html">Research</a>
-                                </li>
-                                <li class="d-inline-block">
-                                    <a class="text-decoration-none" href="university-life.html">Community</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> -->
                 </div>
+                <div class="col-lg-5 col-sm-6">
+                    <div class="copyright-title text-end">
+                        <p>© <strong>Nexgen</strong> is Proudly Owned by Roriri</p>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-sm-6">
+                    <div class="copyright-list text-end">
+                        <ul class="list-unstyled ps-0 mb-0">
+                            <li class="d-inline-block">
+                                <a class="text-decoration-none" href="university-life.html">Students</a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a class="text-decoration-none" href="faculty.html">Faculty</a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a class="text-decoration-none" href="university-overview.html">Research</a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a class="text-decoration-none" href="university-life.html">Community</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
             </div>
         </div>
+    </div>
        <!-- End Copyright Area -->
 
         <!-- Back to Top -->
