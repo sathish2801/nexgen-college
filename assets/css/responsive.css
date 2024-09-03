@@ -693,9 +693,11 @@
   }
   .adma-about-content .adma-about-card {
     margin-bottom: 25px;
+    
   }
   .adma-about-content .adma-about-card .arrow-btn {
     margin-top: 0;
+    margin-bottom: 10px;
   }
   .adma-about-image .shape-3 {
     display: none;
