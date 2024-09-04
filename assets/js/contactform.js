@@ -9,7 +9,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     const data = Object.fromEntries(formData.entries());
 
     // Send the data to the backend using fetch
-    fetch('http://192.168.2.14:1000/forms/college/detail/cud/', {
+    fetch('http://treasurebackend.roririsoft.com/forms/nexgen/college/detail/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
