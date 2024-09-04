@@ -5039,3 +5039,76 @@ Back to Top Style
   visibility: visible;
   transform: translateY(-95%);
 }/*# sourceMappingURL=style.css.map */
+
+
+/* Custom Modal Styles */
+.custom-modal {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  animation: scaleUp 0.5s ease-out; /* Scale-up animation when modal appears */
+  background: linear-gradient(to right, #ffffff, #f0f0f0); /* Adds a soft gradient background */
+}
+
+/* Modal Header Style */
+.modal-header {
+  background-color: #007bff; /* Primary color */
+  color: #fff;
+  border-bottom: none; /* Remove default border */
+}
+
+/* Modal Body Style */
+.modal-body {
+  font-size: 16px;
+  padding: 20px;
+  color: #333; /* Slightly dark text for readability */
+  text-align: center; /* Center the message text */
+}
+
+/* Modal Footer Style */
+.modal-footer {
+  border-top: none; /* Remove default border */
+  justify-content: center; /* Center footer buttons */
+}
+
+/* Animation Keyframes for Modal */
+@keyframes scaleUp {
+  0% {
+      transform: scale(0.7);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+/* Optional: Style for the close button to match theme */
+.btn-close {
+  color: #fff;
+  background: none;
+  border: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+
+/* Darker Backdrop with Smooth Fade In */
+.modal-backdrop.show {
+  opacity: 0.85; /* Slightly darker backdrop */
+  transition: opacity 0.3s ease-in-out; /* Smooth backdrop fade */
+}
+
+/* Custom Button Styles in Footer */
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
