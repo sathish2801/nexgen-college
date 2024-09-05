@@ -56,8 +56,10 @@ Default Style
   --whiteColor: #ffffff;
   --teritarycolor:#080808;
   --blackColor: rgb(0, 30, 67);
-  --paragraphColor: #555;
+  --paragraphColor: #4e4d4d;
   --transition: .5s;
+  --yellowColor:rgb(248, 214, 19);
+
 }
 
 body {
@@ -1613,24 +1615,25 @@ Graduets Area Style
   font-size: 40px;
   line-height: 0;
   margin-right: 10px;
-  color: var(--secenderyColor);
+  color: var(--yellowColor) ;
 }
 .single-graduates-card p {
   padding-bottom: 15px;
   margin-bottom: 15px;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 .single-graduates-card .list li {
   margin-bottom: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
   padding-bottom: 15px;
+  color: var(--whiteColor);
 }
 .single-graduates-card .list li a {
   font-weight: 800;
   position: relative;
   padding-left: 20px;
-  color: rgba(255, 255, 255, 0.81);
+  color: rgba(255, 255, 255, 0.81) ;
   font-family: var(--heading-font-family);
 }
 .single-graduates-card .list li a i {
@@ -1663,7 +1666,7 @@ Graduets Area Style
 }
 .single-graduates-card span {
   margin-top: 40px;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75) ;
 }
 .single-graduates-card span i {
   font-size: 20px;
